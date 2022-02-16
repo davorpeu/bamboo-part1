@@ -5,28 +5,37 @@ $mediaMaxHeight: 1080px;
 
 $text__font: Raleway;
 
+//@warn removing this adds padding to the grid
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 
 .container {
-    display: grid; 
-    grid-template-columns: 1; 
-    grid-template-rows: 20% 20% 20% 20% 20%; 
-    gap: 0px 0px; 
-   
-    
-  }
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 10% 40% 20% 10% 10% 10%;
+    gap: 0px 0px;
+}
 
-.header {
-    grid-row-start: 1;
-  
+.navigation {
     background-color: #87de87;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    grid-row-start: 1;
+    height: 100%;
+    width: 100%;
+    
 }
-
-.header__logo {
+.logo-background {
     background-color: #ffff;
+    height: fit-content;
+    width: fit-content;
+}
+.header__logo {
     font-family: $text__font;
 }
 .logo {
@@ -34,33 +43,32 @@ $text__font: Raleway;
 
 .header__nav {
     font-family: $text__font;
-
 }
 
-.section {
-    grid-column-start: 1;
-
+.section__hero {
     font-family: $text__font;
     padding: 1;
     margin: 1;
+    grid-row-start: 2;
+
+    grid-template-columns: subgrid;
+    grid-template-rows: repeat(1, 100%);
+}
+.title__background__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .section__card {
-    grid-row-start: 2;
-}
-.section__details {
     grid-row-start: 3;
 }
-.section__newsletter {
+.section__details {
     grid-row-start: 4;
 }
-.footer {
+.section__newsletter {
     grid-row-start: 5;
 }
-.card__title {
- 
-}
-.title__background__image {
-    position: absolute;
-    z-index: -1;
+footer {
+    grid-row-start: 6;
 }
