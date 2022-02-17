@@ -1,22 +1,18 @@
-* {
+body {
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 10% 40% 20% 10% 10% 10%;
-      grid-template-rows: 10% 40% 20% 10% 10% 10%;
-  gap: 0px 0px;
-}
-
 .navigation {
   background-color: #87de87;
+  height: 101px;
+  width: 100%;
+  padding: auto;
+}
+
+.navigation__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,67 +22,112 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  height: 100%;
-  width: 100%;
+  padding-left: 108px;
+  padding-top: 30px;
+  padding-right: 96px;
 }
 
-.logo-background {
+.navigation__logo {
   background-color: #ffff;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  height: 42px;
+  width: 120px;
+  top: -10px;
+  position: relative;
 }
 
-.header__logo {
+.navigation__logo-text {
   font-family: Raleway;
+  font-size: 36px;
+  bottom: 16px;
+  position: relative;
+  text-align: center;
 }
 
-.header__nav {
+.nav__item {
   font-family: Raleway;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.section__hero {
+.nav__item:hover {
+  color: #ffff;
+}
+
+.navigation__button {
   font-family: Raleway;
-  padding: 1;
-  margin: 1;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  -ms-grid-columns: subgrid;
-      grid-template-columns: subgrid;
-  -ms-grid-rows: (100%)[1];
-      grid-template-rows: repeat(1, 100%);
+  margin-left: 12px;
+  background-color: #ffff;
+  border: none;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.title__background__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.navigation__button:hover {
+  background-color: #b3ffb3;
 }
 
-.section__card {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+.hero-section__background-image {
+  height: 640px;
+  background-image: url("../img/windturbines.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.section__details {
-  -ms-grid-row: 4;
-      grid-row-start: 4;
+.section__hero-text {
+  height: 228;
+  width: 595;
+  background-color: #87de87;
+  margin: 20px;
+  margin-top: 0px;
+  padding-left: 32px;
 }
 
-.section__newsletter {
-  -ms-grid-row: 5;
-      grid-row-start: 5;
+.section__hero-title {
+  font-family: Raleway;
+  font-size: 48px;
+  color: #ffff;
+  background-color: #333333;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 349px;
 }
 
-footer {
-  -ms-grid-row: 6;
-      grid-row-start: 6;
+.section__hero-paragraph {
+  font-family: Raleway;
+  font-size: 18px;
+  color: #ffff;
+  background-color: #333333;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 24px;
+  padding-bottom: 34px;
+  padding-right: 19px;
+  padding-top: 12px;
+}
+
+.card-section {
+  height: 730px;
 }
 /*# sourceMappingURL=styles.css.map */
