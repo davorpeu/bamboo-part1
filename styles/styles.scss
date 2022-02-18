@@ -283,6 +283,9 @@ body {
     //margin: 4px 2px;
     cursor: pointer;
 }
+.button:hover {
+    background-color: #ffff;
+}
 
 //
 //NEWSLETTER SECTION
@@ -339,6 +342,10 @@ body {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+.newsletter__button:hover{
+    background-color: #fefefe;
+
 }
 
 //
