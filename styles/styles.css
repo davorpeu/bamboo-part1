@@ -542,5 +542,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 180px;
+  gap: 36px;
 }
 /*# sourceMappingURL=styles.css.map */
